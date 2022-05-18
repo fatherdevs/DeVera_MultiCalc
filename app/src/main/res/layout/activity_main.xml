@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/multicalcbackground"
+    >
+
+    <Button
+        android:id="@+id/btnDensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/pink"
+        android:fontFamily="@font/baloo"
+        android:text="Density Formula"
+        android:textColor="#7CAA9E"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/pink"
+        android:fontFamily="@font/baloo"
+        android:text="Power Formula"
+        android:textColor="#7CAA9E"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnDensity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnDensity"
+        app:layout_constraintTop_toBottomOf="@+id/btnDensity" />
+
+    <Button
+        android:id="@+id/btnNewton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/pink"
+        android:fontFamily="@font/baloo"
+        android:text="Newton's Second Law"
+        android:textColor="#7CAA9E"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnPower"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnPower"
+        app:layout_constraintTop_toBottomOf="@+id/btnPower" />
+
+    <Button
+        android:id="@+id/btnWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/pink"
+        android:fontFamily="@font/baloo"
+        android:text="Weight Formula"
+        android:textColor="#7CAA9E"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnNewton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnNewton"
+        app:layout_constraintTop_toBottomOf="@+id/btnNewton" />
+
+    <Button
+        android:id="@+id/btnAcceleration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/pink"
+        android:fontFamily="@font/baloo"
+        android:text="Acceleration Formula"
+        android:textColor="#7CAA9E"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnWeight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnWeight"
+        app:layout_constraintTop_toBottomOf="@+id/btnWeight" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo"
+        android:text="Choose A Formula!"
+        android:textColor="#7CAA9E"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
